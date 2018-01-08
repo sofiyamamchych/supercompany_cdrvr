@@ -4,8 +4,7 @@
   justify-content: space-between
   
 .logo
-  font-size: 37px
-  font-family: 'Roboto', sans-serif
+  @include default-font(37px)
   color: rgb(0, 2, 3)
   line-height: 1.2
   text-align: left
@@ -17,9 +16,40 @@
   align-items: center
 
 .search
+  @include default-font(12px)
   border: 1px solid #dcdee0
-  font-size: 12px;
-  font-family: 'Roboto', sans-serif
   color: rgb(46, 50, 54)
   line-height: 1.2
+
+.icon-search, .icon-advanced-settings
+  fill: #53595e
+  font-size: 16px
+
+.search__settings a
+  text-decoration: none
+  @include default-font(12px)
+  color: rgb(10, 79, 139)
+  line-height: 1.2
+
+.icon-home
+  fill: #878c8f
+  background: #dcdee0
+  border-radius: 36px
+  padding: 7px
+
+
+.header__accountname
+  text-decoration: none
+  @include default-font(12px)
+  color: rgb(46, 50, 54)
+
+.header__logout
+  text-decoration: none
+  @include default-font(10px)
+  color: rgb(46, 50, 54)
+  line-height: 5
+  border: 1px solid #dcdee0
+  padding: 4px 6px 5px 7px
+  border-radius: 12px
+  
 
