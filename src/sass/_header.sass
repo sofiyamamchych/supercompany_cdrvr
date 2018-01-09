@@ -1,8 +1,12 @@
 .container
-  display: flex
-  flex-direction: row
-  justify-content: space-between
+  display: grid
+  grid-template-columns: auto auto auto
+  padding: 12px 18px 8px 24px
   
+
+.header__logo, .header__search, .header__account 
+  border: 1px solid
+
 .logo
   @include default-font(37px)
   color: rgb(0, 2, 3)
@@ -11,19 +15,36 @@
 
 
 .header__search
+  display: grid
+  grid-template-columns: auto auto auto
+
+.header__searcharea
   display: flex
-  flex-direction: row
-  align-items: center
 
 .search
   @include default-font(12px)
   border: 1px solid #dcdee0
   color: rgb(46, 50, 54)
   line-height: 1.2
+  padding: 8px 1px 7px 12px
+  height: 32px
+  margin-top: 6px
+  
+.search__icon
+  margin-top: -9px
+  margin-left: -1px
+
+.icon-search
+  border: 1px solid #dcdee0
+  height: 32px
+  width: 32px
 
 .icon-search, .icon-advanced-settings
   fill: #53595e
-  font-size: 16px
+  font-size: 22px
+
+.search__settings
+  margin-top: -17px
 
 .search__settings a
   text-decoration: none
@@ -31,25 +52,34 @@
   color: rgb(10, 79, 139)
   line-height: 1.2
 
+
+.header__account 
+  display: grid
+  grid-template-columns: 45px auto auto
+
 .icon-home
   fill: #878c8f
   background: #dcdee0
   border-radius: 36px
-  padding: 7px
-
+  padding: 10px
+  font-size: 35px
+  margin-top: 7px
 
 .header__accountname
   text-decoration: none
   @include default-font(12px)
   color: rgb(46, 50, 54)
+  margin-top: 17px
 
 .header__logout
   text-decoration: none
   @include default-font(10px)
   color: rgb(46, 50, 54)
-  line-height: 5
   border: 1px solid #dcdee0
-  padding: 4px 6px 5px 7px
+  padding: 6px 8px 6px 8px
   border-radius: 12px
+  height: 27px
+  width: 53px
+  margin-top: 7px
   
 
