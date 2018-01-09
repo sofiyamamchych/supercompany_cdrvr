@@ -27,13 +27,13 @@
    <!--  <div class="container"> -->
         <div class="header__nav">
             <a href="#" class="is-active">home</a>
-            <a href="#">my docushare</a>
-            <a href="#">my tasks</a>
-            <a href="#">my favorites</a>
-            <a href="#">recent</a>
+            <a href="#"> {{mixins.icon('home')}} my docushare</a>
+            <a href="#">{{mixins.icon('tasks')}}my tasks</a>
+            <a href="#">{{mixins.icon('star')}}my favorites</a>
+            <a href="#">{{mixins.icon('recent')}}recent</a>
         </div>
         <div class="header__background-jobs">
-            <a href="#">background-jobs</a>
+            <a href="#"> {{mixins.icon('background-jobs')}} background-jobs <span class="header__background-jobsnum">8</span></a>
         </div>
     </div>
 </div>
