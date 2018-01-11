@@ -22,18 +22,22 @@
            <a class="header__accountname" href="#"> emma.davidson@caterptillar.com</a>
            <a class="round-btn" href="#">Log out</a>
         </div>
-  <!--   </div> -->
-        
-   <!--  <div class="container"> -->
+    </div>
+    <div class="header__navline">
         <div class="header__nav">
             <a href="#" class="is-active">home</a>
-            <a href="#"> {{mixins.icon('home')}} my docushare</a>
-            <a href="#">{{mixins.icon('tasks')}}my tasks</a>
-            <a href="#">{{mixins.icon('star')}}my favorites</a>
-            <a href="#">{{mixins.icon('recent')}}recent</a>
+            <a href="#"> {{mixins.icon('home')}} <span class="header__navitemname">my docushare</span></a>
+            <a href="#">{{mixins.icon('tasks')}} <span class="header__navitemname">my tasks</span></a>
+            <a href="#">{{mixins.icon('star')}} <span class="header__navitemname">my favorites</span></a>
+            <a href="#">{{mixins.icon('recent')}} <span class="header__navitemname">recent</span></a>
         </div>
         <div class="header__background-jobs">
-            <a href="#"> {{mixins.icon('background-jobs')}} background-jobs <span class="header__background-jobsnum">8</span></a>
+            <a href="#"> 
+                {{mixins.icon('background-jobs')}} 
+                <span class="header__navitemname"> background-jobs</span>
+                <span class="header__background-jobsnum">8</span>
+            </a>
         </div>
     </div>
+    
 </div>
